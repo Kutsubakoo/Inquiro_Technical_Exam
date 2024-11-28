@@ -2,6 +2,7 @@
 fetch('./data.json')
     .then(res => res.json())
     .then(data => {
+        console.log(data)
         // Tab List and Content
         const tabList = document.querySelector('#myTab');
         const tabContent = document.querySelector('#myTabContent');
