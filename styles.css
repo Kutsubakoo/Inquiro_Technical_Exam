@@ -1,0 +1,68 @@
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    padding: 20px;
+}
+/* Tab styles for desktop */
+.tabs-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    background-color: #f9f9f9;
+}
+
+.active-tab {
+    background-color: #ccc;
+}
+
+/* Accordion styles for mobile */
+.accordion-container {
+    display: none;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.accordion-item button {
+    background-color: #f1f1f1;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.accordion-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: none;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .tabs-container {
+        display: none; /* Hide tabs on mobile */
+    }
+
+    .accordion-container {
+        display: block; /* Show accordion on mobile */
+    }
+}
